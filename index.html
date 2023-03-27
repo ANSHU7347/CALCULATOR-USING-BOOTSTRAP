@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timesheet Calculator</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center">Timesheet Calculator</h1>
+
+		<form>
+			<div class="form-group">
+				<label for="hours">Hours Worked:</label>
+				<input type="number" class="form-control" id="hours" name="hours">
+			</div>
+
+			<div class="form-group">
+				<label for="rate">Hourly Rate:</label>
+				<input type="number" class="form-control" id="rate" name="rate">
+			</div>
+
+			<button type="button" class="btn btn-primary btn-block" onclick="calculate()">Calculate</button>
+
+			<div class="form-group">
+				<label for="result">Total Earnings:</label>
+				<input type="text" class="form-control" id="result" name="result" disabled>
+			</div>
+		</form>
+	</div>
+
+	<!-- Bootstrap JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<script src="script.js"></script>
+</body>
+</html>
